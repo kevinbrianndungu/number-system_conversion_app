@@ -1,0 +1,17 @@
+#:kivy 2.0
+
+BoxLayout:
+    orientation: 'vertical'
+    spacing: 10
+
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.2, 0.2, 1  # Dark gray background color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    Label:
+        text: "Hello, this is your Kivy app!"
+        font_size: 20
+
